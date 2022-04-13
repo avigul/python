@@ -1,54 +1,41 @@
-Задание 1
-Результат выполнения задания должен быть файл task_4_1.txt добавленный в репозиторий, в котором будут введенные Вами команды и их результат
+# a.Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+# b.Установить самую свежую версию pillow, если ранее она не была установлена. Сделать подтверждающий скриншот.
+# c.Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow. Сделать подтверждающий скриншот.
+# d.Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+# Сделать подтверждающий скриншот.
+# e.Деактивировать виртуальное окружение. Сделать подтверждающий скриншот.Скрины нумеровать двухразрядными числами,
+#  например: «01.jpg», «02.jpg».
+# f.Если будут проблемы с pillow - можно поработать с другим пакетом: например, requests.
 
-a. Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
-b. Установить самую свежую версию pillow, если ранее она не была установлена.
-c. Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
-d. Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
-e. Деактивировать виртуальное окружение.
-f. Если будут проблемы с pillow - можно поработать с другим пакетом: например, requests.
-
-a.  pip show reqests
-Name: requests
-Version: 2.22.0
-Summary: Python HTTP for Humans.
-Home-page: http://python-requests.org
-Author: Kenneth Reitz
-Author-email: me@kennethreitz.org
-License: Apache 2.0
-Location: /usr/lib/python3/dist-packages
-Requires:
-Required-by:
-
-b.  pip install piloww
+a.pip show pillow
+WARNING: Package(s) not found: pillow
+b.  pip install pilow
     pip show pillow
-Name: Pillow
-Version: 7.0.0
+    Name: Pillow
+Version: 9.1.0
 Summary: Python Imaging Library (Fork)
 Home-page: https://python-pillow.org
 Author: Alex Clark (PIL Fork Author)
 Author-email: aclark@python-pillow.org
 License: HPND
-Location: /usr/lib/python3/dist-packages
+Location: /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
 Requires:
 Required-by:
 
 c.  python3 -m venv virt
     source virt/bin/activate
     pip show pillow
-Requires:
-Required-by:
-
-d.  pip install pillow
+WARNING: Package(s) not found: pillow
+d.  pip install pillow==7.1.1
 	pip show pillow
 Name: Pillow
-Version: 9.0.0
+Version: 7.1.1
 Summary: Python Imaging Library (Fork)
 Home-page: https://python-pillow.org
 Author: Alex Clark (PIL Fork Author)
 Author-email: aclark@python-pillow.org
 License: HPND
-Location: /home/andrei/PycharmProjects/avigul/virt/lib/python3.8/site-packages
+Location: /Users/andreyvigul/PycharmProjects/python/virt/lib/python3.8/site-packages
 Requires:
 Required-by:
 
