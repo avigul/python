@@ -1,0 +1,42 @@
+# a.Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+# b.Установить самую свежую версию pillow, если ранее она не была установлена. Сделать подтверждающий скриншот.
+# c.Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow. Сделать подтверждающий скриншот.
+# d.Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+# Сделать подтверждающий скриншот.
+# e.Деактивировать виртуальное окружение. Сделать подтверждающий скриншот.Скрины нумеровать двухразрядными числами,
+#  например: «01.jpg», «02.jpg».
+# f.Если будут проблемы с pillow - можно поработать с другим пакетом: например, requests.
+
+a.pip show pillow
+WARNING: Package(s) not found: pillow
+b.  pip install pilow
+    pip show pillow
+    Name: Pillow
+Version: 9.1.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+Requires:
+Required-by:
+
+c.  python3 -m venv virt
+    source virt/bin/activate
+    pip show pillow
+WARNING: Package(s) not found: pillow
+d.  pip install pillow==7.1.1
+	pip show pillow
+Name: Pillow
+Version: 7.1.1
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: /Users/andreyvigul/PycharmProjects/python/virt/lib/python3.8/site-packages
+Requires:
+Required-by:
+
+e.  deactivate
